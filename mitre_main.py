@@ -77,7 +77,7 @@ def menu():
             if number_of_algorithm != 1:
                 answer = algorithm_list(number_of_algorithm, file_path, using_data)
                 
-                save_or_not = input('Save results?\n' + 
+                save_or_not = input('Сохранить результаты?\n' + 
                                     '1 --> Yes\n' + 
                                     '2 --> No\n')
                 
