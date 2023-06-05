@@ -70,6 +70,9 @@ def menu():
                 return menu()
             global answer, number_of_algorithm, answers
             number_of_algorithm = int(input('Введите количество алгоритмов: '))
+            if number_of_algorithm > 4:
+                print('Количество алгоритмов не может быть больше 4, введите заново')
+                return menu()
             
             if number_of_algorithm != 1:
                 answer = algorithm_list(number_of_algorithm, file_path, using_data)
